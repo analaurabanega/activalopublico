@@ -5,10 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Activá lo Público</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
-
     body {
-      font-family: 'Lato', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       background-color: #CAE8FF;
       color: #051F3E;
