@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Activá lo Público</title>
+  <title>ACTIVÁ LO PÚBLICO</title>
   <style>
     body {
       font-family: Impact, "Helvetica-Inserat";
@@ -55,30 +55,33 @@
 
   <section>
     <h2>¿Quiénes somos?</h2>
-    <p>Actio es una asociación civil integrada por personas comprometidas con el servicio público en Argentina. Fundada en 2020 por exbecarios del Programa para el Fortalecimiento de la
-      Función Pública en América Latina de la Fundación Botín, reúne actualmente a 74 miembros. Su propósito es consolidarse como un espacio de articulación, formación y colaboración
-      para promover y fortalecer la función pública en el país.</p>
+    <p>Actio es una asociación civil integrada por personas comprometidas con el servicio público en Argentina. Fundada en 2020 por exbecarios del Programa para el Fortalecimiento de la Función Pública en América Latina de la Fundación Botín, reúne actualmente a 74 miembros. Su propósito es consolidarse como un espacio de articulación, formación y colaboración para promover y fortalecer la función pública en el país.</p>
 
     <h2>¿Por qué “Activá lo Público”?</h2>
-    <p>Buscamos despertar el compromiso de los jóvenes con el servicio público.</p>
+    <p>Buscamos despertar el compromiso de las y los jóvenes con el servicio público, a través de una experiencia virtual con sesiones semanales que los conecte con referentes de cada sector y estimule su comprensión de lo público. Además, proponemos una experiencia vivencial de 3 días para las y los 25 mejores estudiantes de la etapa virtual.</p>
 
     <h2 class="aliados">Nuestros aliados</h2>
-    <p>Fundación Botín, Red Actio y más actores del sector público y social comprometidos con la transformación.</p>
+    <p>Creada en 1964, la Fundación Botín actúa en España y América Latina con la misión de contribuir al desarrollo integral de la sociedad. Para ello, impulsa nuevas formas de identificar y potenciar el talento creativo, generando riqueza cultural, social y económica. Sus programas abarcan los campos del arte y la cultura, la educación, el fortalecimiento institucional, la ciencia y el desarrollo rural..</p>
 
     <h2>Misión</h2>
-    <p>Fomentar la vocación de servicio público en jóvenes a través de experiencias de alto impacto.</p>
+    <p>Que más de las y los mejores se dediquen a lo público.</p>
 
     <h2>Visión</h2>
-    <p>Una nueva generación apasionada por lo público, innovadora y comprometida.</p>
+    <p>Llegar a jóvenes de Argentina a través de una experiencia federal y latinoamericanista, con un componente vivencial y otro formativo, que contribuya a entender, involucrarse y defender el valor de lo público.</p>
 
     <h2>Público objetivo</h2>
-    <p>Jóvenes de entre 18 y 21 años interesados en el impacto social y la función pública.</p>
+    <p>Jóvenes de Argentina de 18 a 21 años que hayan finalizado el colegio secundario y estén cursando estudios universitarios de grado o terciarios.</p>
 
     <h2>Cronograma</h2>
     <ul>
-      <li>15 de mayo: Apertura de inscripciones</li>
-      <li>4 de agosto: Cierre de postulaciones</li>
-      <li>3, 4 y 5 de octubre: Actividad presencial</li>
+      <li>17 de mayo: Lanzamiento del programa y apertura de inscripciones</li>
+      <li>7 de junio: Cierre de postulaciones</li>
+      <li>15 de junio al 2 de julio: período de evaluación de postulaciones y entrevistas</li>
+      <li>9 de julio: anuncio de seleccionados para la etapa virtual</li>
+      <li>6 de agosto: Comienzo de la etapa virtual</li>
+      <li>24 de septiembre: fin de la etapa virtual</li>
+      <li>24 de septiembre: Anuncio de seleccionados y seleccionadas para la etapa presencial</li>
+      <li>10, 11 y 12 de octubre: Actividad presencial</li>
     </ul>
 
     <h2>Criterios de selección</h2>
