@@ -50,12 +50,14 @@
 
   <header>
     <h1>Activá lo Público</h1>
-    <p>El programa para enamorar a los jóvenes de lo público</p>
+    <p>El programa para enamorar a las y los jóvenes de lo público</p>
   </header>
 
   <section>
     <h2>¿Quiénes somos?</h2>
-    <p>Una iniciativa de la Red Argentina de Servidores Públicos “Red Actio” y la Fundación Botín.</p>
+    <p>Actio es una asociación civil integrada por personas comprometidas con el servicio público en Argentina. Fundada en 2020 por exbecarios del Programa para el Fortalecimiento de la
+      Función Pública en América Latina de la Fundación Botín, reúne actualmente a 74 miembros. Su propósito es consolidarse como un espacio de articulación, formación y colaboración
+      para promover y fortalecer la función pública en el país.</p>
 
     <h2>¿Por qué “Activá lo Público”?</h2>
     <p>Buscamos despertar el compromiso de los jóvenes con el servicio público.</p>
