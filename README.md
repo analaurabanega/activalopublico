@@ -6,7 +6,7 @@
   <title>Activá lo Público</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: Impact, "Helvetica-Inserat";
       margin: 0;
       background-color: #CAE8FF;
       color: #051F3E;
