@@ -82,8 +82,7 @@
       <li>24 de septiembre: fin de la etapa virtual</li>
       <li>24 de septiembre: Anuncio de seleccionados y seleccionadas para la etapa presencial</li>
       <li>10, 11 y 12 de octubre: Actividad presencial</li>
-    </ul>
-
+ 
     <h2>Criterios de selección</h2>
     <li>Poseer nacionalidad argentina.</li>
 <li>Haber nacido entre el 7 de agosto de 2003y el 6 de agosto de 2007 inclusive, a la fecha de inicio del programa.</li>
