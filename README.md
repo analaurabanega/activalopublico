@@ -220,10 +220,14 @@
     <p>CUIL No. 00-000000000-0</p>
   </footer>
 
-  <script>
-    const frase = "Que más de las y los mejores se dediquen a lo público.";
-    const contenedor = document.getElementById("mision");
+<script>
+  const contenedor = document.getElementById("mision");
+  const frase = "Que más de los mejores se dediquen a lo público";
 
+  function animarFrase() {
+    contenedor.innerHTML = ""; // limpiar para reiniciar
+
+    // Crear spans con delay progresivo
     frase.split("").forEach((letra, index) => {
       const span = document.createElement("span");
       span.textContent = letra;
@@ -231,9 +235,22 @@
       contenedor.appendChild(span);
     });
 
+    // Tiempo total de la animación de aparición + un pequeño delay
+    const duracionAparicion = frase.length * 50 + 500; // ms
+
+    // Después que todas las letras aparecen, agregar clase blink para titilar
     setTimeout(() => {
-      contenedor.classList.add("completa");
-    }, frase.length * 50 + 500);
-  </script>
+      contenedor.classList.add("blink");
+    }, duracionAparicion);
+
+    // Quitar clase blink y reiniciar animación para repetir
+    setTimeout(() => {
+      contenedor.classList.remove("blink");
+      animarFrase();
+    }, duracionAparicion + 1500); // tiempo total para ciclo completo
+  }
+
+  animarFrase();
+</script>
 </body>
 </html>
