@@ -158,33 +158,47 @@
 
     <h2>Cronograma</h2>
     <div class="timeline">
-      <div class="event">
-        <h4>17 de mayo</h4>
-        <p>Lanzamiento del programa y apertura de inscripciones</p>
+      <div class="timeline-container left">
+        <div class="content">
+          <h3>17 de mayo</h3>
+          <p>Lanzamiento del programa y apertura de inscripciones</p>
+        </div>
       </div>
-      <div class="event">
-        <h4>7 de junio</h4>
-        <p>Cierre de postulaciones</p>
+      <div class="timeline-container right">
+        <div class="content">
+          <h3>7 de junio</h3>
+          <p>Cierre de postulaciones</p>
+        </div>
       </div>
-      <div class="event">
-        <h4>15 de junio al 2 de julio</h4>
-        <p>Período de evaluación de postulaciones y entrevistas</p>
+      <div class="timeline-container left">
+        <div class="content">
+          <h3>15 de junio al 2 de julio</h3>
+          <p>Evaluación de postulaciones y entrevistas</p>
+        </div>
       </div>
-      <div class="event">
-        <h4>9 de julio</h4>
-        <p>Anuncio de seleccionados para la etapa virtual</p>
+      <div class="timeline-container right">
+        <div class="content">
+          <h3>9 de julio</h3>
+          <p>Anuncio de seleccionados para la etapa virtual</p>
+        </div>
       </div>
-      <div class="event">
-        <h4>6 de agosto</h4>
-        <p>Comienzo de la etapa virtual</p>
+      <div class="timeline-container left">
+        <div class="content">
+          <h3>6 de agosto</h3>
+          <p>Inicio de la etapa virtual</p>
+        </div>
       </div>
-      <div class="event">
-        <h4>24 de septiembre</h4>
-        <p>Fin de la etapa virtual y anuncio de seleccionados/as para la etapa presencial</p>
+      <div class="timeline-container right">
+        <div class="content">
+          <h3>24 de septiembre</h3>
+          <p>Fin de la etapa virtual y anuncio de seleccionados/as para la etapa presencial</p>
+        </div>
       </div>
-      <div class="event">
-        <h4>10, 11 y 12 de octubre</h4>
-        <p>Actividad presencial</p>
+      <div class="timeline-container left">
+        <div class="content">
+          <h3>10, 11 y 12 de octubre</h3>
+          <p>Actividad presencial</p>
+        </div>
       </div>
     </div>
 
@@ -207,7 +221,7 @@
   </footer>
 
   <script>
-    const frase = "Que más de los mejores se dediquen a lo público.";
+    const frase = "Que más de las y los mejores se dediquen a lo público.";
     const contenedor = document.getElementById("mision");
 
     frase.split("").forEach((letra, index) => {
