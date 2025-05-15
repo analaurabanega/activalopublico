@@ -1,5 +1,7 @@
 <html lang="es">
 <head>
+  <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+<link href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ACTIVÁ LO PÚBLICO</title>
@@ -82,17 +84,110 @@
     <h2>Público objetivo</h2>
     <p>Jóvenes de Argentina de 18 a 21 años que hayan finalizado el colegio secundario y estén cursando estudios universitarios de grado o terciarios.</p>
 
-    <h2>Cronograma</h2>
-    <ul>
-      <li>17 de mayo: Lanzamiento del programa y apertura de inscripciones</li>
-      <li>7 de junio: Cierre de postulaciones</li>
-      <li>15 de junio al 2 de julio: período de evaluación de postulaciones y entrevistas</li>
-      <li>9 de julio: anuncio de seleccionados para la etapa virtual</li>
-      <li>6 de agosto: Comienzo de la etapa virtual</li>
-      <li>24 de septiembre: fin de la etapa virtual</li>
-      <li>24 de septiembre: Anuncio de seleccionados y seleccionadas para la etapa presencial</li>
-      <li>10, 11 y 12 de octubre: Actividad presencial</li>
-    </ul>
+  <div id="timeline-embed" style="width: 100%; height: 600px"></div>
+<script type="text/javascript">
+  var additionalOptions = {
+    // Opciones adicionales si las necesitas
+  };
+  var timeline_json = {
+    "title": {
+      "text": {
+        "headline": "Cronograma del Programa",
+        "text": "Fechas clave del programa Activá lo Público"
+      }
+    },
+    "events": [
+      {
+        "start_date": {
+          "year": 2025,
+          "month": 5,
+          "day": 17
+        },
+        "text": {
+          "headline": "Lanzamiento del programa",
+          "text": "Apertura de inscripciones"
+        }
+      },
+      {
+        "start_date": {
+          "year": 2025,
+          "month": 6,
+          "day": 7
+        },
+        "text": {
+          "headline": "Cierre de postulaciones",
+          "text": ""
+        }
+      },
+      {
+        "start_date": {
+          "year": 2025,
+          "month": 6,
+          "day": 15
+        },
+        "end_date": {
+          "year": 2025,
+          "month": 7,
+          "day": 2
+        },
+        "text": {
+          "headline": "Evaluación de postulaciones",
+          "text": "Período de evaluación y entrevistas"
+        }
+      },
+      {
+        "start_date": {
+          "year": 2025,
+          "month": 7,
+          "day": 9
+        },
+        "text": {
+          "headline": "Anuncio de seleccionados",
+          "text": "Para la etapa virtual"
+        }
+      },
+      {
+        "start_date": {
+          "year": 2025,
+          "month": 8,
+          "day": 6
+        },
+        "text": {
+          "headline": "Inicio de la etapa virtual",
+          "text": ""
+        }
+      },
+      {
+        "start_date": {
+          "year": 2025,
+          "month": 9,
+          "day": 24
+        },
+        "text": {
+          "headline": "Fin de la etapa virtual",
+          "text": "Anuncio de seleccionados para la etapa presencial"
+        }
+      },
+      {
+        "start_date": {
+          "year": 2025,
+          "month": 10,
+          "day": 10
+        },
+        "end_date": {
+          "year": 2025,
+          "month": 10,
+          "day": 12
+        },
+        "text": {
+          "headline": "Actividad presencial",
+          "text": ""
+        }
+      }
+    ]
+  };
+  window.timeline = new TL.Timeline('timeline-embed', timeline_json, additionalOptions);
+</script>
 
     <h2>Criterios de selección</h2>
     <ul>
