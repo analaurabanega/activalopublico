@@ -85,7 +85,12 @@
     </ul>
 
     <h2>Criterios de selección</h2>
-    <p>Compromiso, motivación, interés por el bien común, diversidad y capacidad de trabajo colaborativo.</p>
+    <li>Poseer nacionalidad argentina.</li>
+<li>Haber nacido entre el 7 de agosto de 2003y el 6 de agosto de 2007 inclusive, a la fecha de inicio del programa.</li>
+<li>Haber finalizado el colegio secundario, ser estudiante universitario o terciario y no haber cursado aún más del 50% de la carrera.</li>
+<li>Contar con buen expediente académico y compromiso social.</li>
+<li>Vocación de servicio e interés por ser agente de cambio.</li>
+</ul>
 
     <h2>Contenidos del programa</h2>
     <p>Formación intensiva, mentorías, actividades prácticas, encuentros con referentes públicos.</p>
