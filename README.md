@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -6,7 +5,8 @@
   <title>ACTIVÁ LO PÚBLICO</title>
   <style>
     body {
-      font-family: Impact, "Helvetica-Inserat";
+      font-family: Arial, sans-serif;
+      font-size: 1.1rem;
       margin: 0;
       background-color: #CAE8FF;
       color: #051F3E;
@@ -19,6 +19,12 @@
       text-align: center;
     }
 
+    header h1 {
+      font-size: 2.8rem;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
     section {
       padding: 2rem;
       max-width: 900px;
@@ -26,10 +32,14 @@
     }
 
     h2 {
-      color: #050A30;
-      border-bottom: 2px solid #5A77A6;
-      padding-bottom: 0.5rem;
+      background-color: #7393C6;
+      color: white;
+      padding: 1rem;
       margin-top: 2rem;
+    }
+
+    p, li {
+      font-size: 1.1rem;
     }
 
     footer {
@@ -39,7 +49,7 @@
       padding: 1rem;
     }
 
-    .aliados, .contacto {
+    .contacto {
       background-color: #7393C6;
       padding: 1rem;
       color: white;
@@ -49,7 +59,7 @@
 <body>
 
   <header>
-    <h1>Activá lo Público</h1>
+    <h1>ACTIVÁ LO PÚBLICO</h1>
     <p>El programa para enamorar a las y los jóvenes de lo público</p>
   </header>
 
@@ -60,8 +70,8 @@
     <h2>¿Por qué “Activá lo Público”?</h2>
     <p>Buscamos despertar el compromiso de las y los jóvenes con el servicio público, a través de una experiencia virtual con sesiones semanales que los conecte con referentes de cada sector y estimule su comprensión de lo público. Además, proponemos una experiencia vivencial de 3 días para las y los 25 mejores estudiantes de la etapa virtual.</p>
 
-    <h2 class="aliados">Nuestros aliados</h2>
-    <p>Creada en 1964, la Fundación Botín actúa en España y América Latina con la misión de contribuir al desarrollo integral de la sociedad. Para ello, impulsa nuevas formas de identificar y potenciar el talento creativo, generando riqueza cultural, social y económica. Sus programas abarcan los campos del arte y la cultura, la educación, el fortalecimiento institucional, la ciencia y el desarrollo rural..</p>
+    <h2>Nuestros aliados</h2>
+    <p>Creada en 1964, la Fundación Botín actúa en España y América Latina con la misión de contribuir al desarrollo integral de la sociedad. Para ello, impulsa nuevas formas de identificar y potenciar el talento creativo, generando riqueza cultural, social y económica. Sus programas abarcan los campos del arte y la cultura, la educación, el fortalecimiento institucional, la ciencia y el desarrollo rural.</p>
 
     <h2>Misión</h2>
     <p>Que más de las y los mejores se dediquen a lo público.</p>
@@ -82,14 +92,16 @@
       <li>24 de septiembre: fin de la etapa virtual</li>
       <li>24 de septiembre: Anuncio de seleccionados y seleccionadas para la etapa presencial</li>
       <li>10, 11 y 12 de octubre: Actividad presencial</li>
- 
+    </ul>
+
     <h2>Criterios de selección</h2>
-    <li>Poseer nacionalidad argentina.</li>
-<li>Haber nacido entre el 7 de agosto de 2003y el 6 de agosto de 2007 inclusive, a la fecha de inicio del programa.</li>
-<li>Haber finalizado el colegio secundario, ser estudiante universitario o terciario y no haber cursado aún más del 50% de la carrera.</li>
-<li>Contar con buen expediente académico y compromiso social.</li>
-<li>Vocación de servicio e interés por ser agente de cambio.</li>
-</ul>
+    <ul>
+      <li>Poseer nacionalidad argentina.</li>
+      <li>Haber nacido entre el 7 de agosto de 2003 y el 6 de agosto de 2007 inclusive, a la fecha de inicio del programa.</li>
+      <li>Haber finalizado el colegio secundario, ser estudiante universitario o terciario y no haber cursado aún más del 50% de la carrera.</li>
+      <li>Contar con buen expediente académico y compromiso social.</li>
+      <li>Vocación de servicio e interés por ser agente de cambio.</li>
+    </ul>
 
     <h2>Contenidos del programa</h2>
     <p>Formación intensiva, mentorías, actividades prácticas, encuentros con referentes públicos.</p>
