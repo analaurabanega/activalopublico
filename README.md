@@ -20,9 +20,8 @@
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       text-transform: uppercase;
-      margin: 0;
     }
 
     section {
@@ -32,10 +31,14 @@
     }
 
     h2 {
+      color: #050A30;
+      border-bottom: 2px solid #5A77A6;
+      padding-bottom: 0.5rem;
+      margin-top: 2rem;
       background-color: #7393C6;
       padding: 1rem;
       color: white;
-      margin-top: 2rem;
+      border-radius: 0.5rem;
     }
 
     footer {
@@ -45,91 +48,90 @@
       padding: 1rem;
     }
 
-    /* Línea de tiempo */
-    .timeline {
-      position: relative;
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 0;
-    }
-
-    .timeline::after {
-      content: '';
-      position: absolute;
-      width: 6px;
-      background-color: #051F3E;
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      margin-left: -3px;
-    }
-
-    .timeline-container {
-      padding: 10px 40px;
-      position: relative;
-      background-color: inherit;
-      width: 50%;
-    }
-
-    .timeline-container::after {
-      content: '';
-      position: absolute;
-      width: 25px;
-      height: 25px;
-      right: -17px;
-      background-color: white;
-      border: 4px solid #5A77A6;
-      top: 15px;
-      border-radius: 50%;
-      z-index: 1;
-    }
-
-    .left {
-      left: 0;
-    }
-
-    .right {
-      left: 50%;
-    }
-
-    .content {
-      padding: 20px 30px;
+    .contacto {
       background-color: #7393C6;
-      position: relative;
-      border-radius: 6px;
+      padding: 1rem;
       color: white;
     }
 
-    .content h3 {
-      margin-top: 0;
-      font-size: 1.2rem;
+    .timeline {
+      position: relative;
+      margin: 2rem 0;
+      padding-left: 30px;
+      border-left: 4px solid #5A77A6;
     }
 
-    @media screen and (max-width: 768px) {
-      .timeline::after {
-        left: 31px;
-      }
+    .event {
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
 
-      .timeline-container {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-      }
+    .event::before {
+      content: '';
+      position: absolute;
+      left: -10px;
+      top: 0.3rem;
+      width: 15px;
+      height: 15px;
+      background-color: #050A30;
+      border-radius: 50%;
+      border: 2px solid #5A77A6;
+    }
 
-      .timeline-container::after {
-        left: 15px;
-      }
+    .event h4 {
+      margin: 0;
+      color: #050A30;
+    }
 
-      .left, .right {
-        left: 0;
-      }
+    .event p {
+      margin: 0.2rem 0 0 0;
+    }
+
+    @keyframes escribir {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes titilar {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    .mision-destacada {
+      background-color: #050A30;
+      color: #FFFFFF;
+      padding: 2rem;
+      margin-top: 2rem;
+      text-align: center;
+      border-radius: 1rem;
+    }
+
+    .mision-animada {
+      font-family: Impact, sans-serif;
+      font-size: 1.8rem;
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .mision-animada span {
+      opacity: 0;
+      animation: escribir 0.05s forwards;
+    }
+
+    .mision-animada.completa {
+      animation: titilar 1s ease-in-out 3s 2;
+    }
+
+    .criterios li {
+      margin-bottom: 0.8rem;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>ACTIVÁ LO PÚBLICO</h1>
+    <h1>Activá lo Público</h1>
     <p>El programa para enamorar a las y los jóvenes de lo público</p>
   </header>
 
@@ -144,7 +146,9 @@
     <p>Creada en 1964, la Fundación Botín actúa en España y América Latina con la misión de contribuir al desarrollo integral de la sociedad. Para ello, impulsa nuevas formas de identificar y potenciar el talento creativo, generando riqueza cultural, social y económica. Sus programas abarcan los campos del arte y la cultura, la educación, el fortalecimiento institucional, la ciencia y el desarrollo rural.</p>
 
     <h2>Misión</h2>
-    <p>Que más de las y los mejores se dediquen a lo público.</p>
+    <div class="mision-destacada">
+      <p class="mision-animada" id="mision"></p>
+    </div>
 
     <h2>Visión</h2>
     <p>Llegar a jóvenes de Argentina a través de una experiencia federal y latinoamericanista, con un componente vivencial y otro formativo, que contribuya a entender, involucrarse y defender el valor de lo público.</p>
@@ -154,54 +158,40 @@
 
     <h2>Cronograma</h2>
     <div class="timeline">
-      <div class="timeline-container left">
-        <div class="content">
-          <h3>17 de mayo</h3>
-          <p>Lanzamiento del programa y apertura de inscripciones</p>
-        </div>
+      <div class="event">
+        <h4>17 de mayo</h4>
+        <p>Lanzamiento del programa y apertura de inscripciones</p>
       </div>
-      <div class="timeline-container right">
-        <div class="content">
-          <h3>7 de junio</h3>
-          <p>Cierre de postulaciones</p>
-        </div>
+      <div class="event">
+        <h4>7 de junio</h4>
+        <p>Cierre de postulaciones</p>
       </div>
-      <div class="timeline-container left">
-        <div class="content">
-          <h3>15 de junio al 2 de julio</h3>
-          <p>Evaluación de postulaciones y entrevistas</p>
-        </div>
+      <div class="event">
+        <h4>15 de junio al 2 de julio</h4>
+        <p>Período de evaluación de postulaciones y entrevistas</p>
       </div>
-      <div class="timeline-container right">
-        <div class="content">
-          <h3>9 de julio</h3>
-          <p>Anuncio de seleccionados para la etapa virtual</p>
-        </div>
+      <div class="event">
+        <h4>9 de julio</h4>
+        <p>Anuncio de seleccionados para la etapa virtual</p>
       </div>
-      <div class="timeline-container left">
-        <div class="content">
-          <h3>6 de agosto</h3>
-          <p>Inicio de la etapa virtual</p>
-        </div>
+      <div class="event">
+        <h4>6 de agosto</h4>
+        <p>Comienzo de la etapa virtual</p>
       </div>
-      <div class="timeline-container right">
-        <div class="content">
-          <h3>24 de septiembre</h3>
-          <p>Fin de la etapa virtual y anuncio de seleccionados/as para la etapa presencial</p>
-        </div>
+      <div class="event">
+        <h4>24 de septiembre</h4>
+        <p>Fin de la etapa virtual y anuncio de seleccionados/as para la etapa presencial</p>
       </div>
-      <div class="timeline-container left">
-        <div class="content">
-          <h3>10, 11 y 12 de octubre</h3>
-          <p>Actividad presencial</p>
-        </div>
+      <div class="event">
+        <h4>10, 11 y 12 de octubre</h4>
+        <p>Actividad presencial</p>
       </div>
     </div>
 
     <h2>Criterios de selección</h2>
-    <ul>
+    <ul class="criterios">
       <li>Poseer nacionalidad argentina.</li>
-      <li>Haber nacido entre el 7 de agosto de 2003 y el 6 de agosto de 2007 inclusive.</li>
+      <li>Haber nacido entre el 7 de agosto de 2003 y el 6 de agosto de 2007 inclusive, a la fecha de inicio del programa.</li>
       <li>Haber finalizado el colegio secundario, ser estudiante universitario o terciario y no haber cursado aún más del 50% de la carrera.</li>
       <li>Contar con buen expediente académico y compromiso social.</li>
       <li>Vocación de servicio e interés por ser agente de cambio.</li>
@@ -211,10 +201,25 @@
     <p>Formación intensiva, mentorías, actividades prácticas, encuentros con referentes públicos.</p>
   </section>
 
-  <footer>
+  <footer class="contacto">
     <p>redactioargentina@gmail.com | @red.actio</p>
     <p>CUIL No. 00-000000000-0</p>
   </footer>
 
+  <script>
+    const frase = "Que más de los mejores se dediquen a lo público.";
+    const contenedor = document.getElementById("mision");
+
+    frase.split("").forEach((letra, index) => {
+      const span = document.createElement("span");
+      span.textContent = letra;
+      span.style.animationDelay = `${index * 0.05}s`;
+      contenedor.appendChild(span);
+    });
+
+    setTimeout(() => {
+      contenedor.classList.add("completa");
+    }, frase.length * 50 + 500);
+  </script>
 </body>
 </html>
