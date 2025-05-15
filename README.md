@@ -222,7 +222,7 @@
 
 <script>
   const contenedor = document.getElementById("mision");
-  const frase = "Que más de los mejores se dediquen a lo público";
+  const frase = "Que más de las y los mejores se enamoren de lo público";
 
   function animarFrase() {
     contenedor.innerHTML = ""; // limpiar para reiniciar
