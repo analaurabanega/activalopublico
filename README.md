@@ -9,7 +9,7 @@
       margin: 0;
       background-color: #CAE8FF;
       color: #051F3E;
-      font-size: 2.5rem;
+      font-size: 5rem;
     }
 
     header {
