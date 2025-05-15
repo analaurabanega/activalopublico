@@ -1,17 +1,15 @@
 <html lang="es">
 <head>
-  <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
-<link href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ACTIVÁ LO PÚBLICO</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      font-size: 1.1rem;
       margin: 0;
       background-color: #CAE8FF;
       color: #051F3E;
+      font-size: 1.1rem;
     }
 
     header {
@@ -22,7 +20,7 @@
     }
 
     header h1 {
-      font-size: 2.8rem;
+      font-size: 2.5rem;
       text-transform: uppercase;
       margin: 0;
     }
@@ -35,13 +33,9 @@
 
     h2 {
       background-color: #7393C6;
-      color: white;
       padding: 1rem;
+      color: white;
       margin-top: 2rem;
-    }
-
-    p, li {
-      font-size: 1.1rem;
     }
 
     footer {
@@ -51,10 +45,84 @@
       padding: 1rem;
     }
 
-    .contacto {
+    /* Línea de tiempo */
+    .timeline {
+      position: relative;
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 0;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: #051F3E;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+
+    .timeline-container {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
+
+    .timeline-container::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      background-color: white;
+      border: 4px solid #5A77A6;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .left {
+      left: 0;
+    }
+
+    .right {
+      left: 50%;
+    }
+
+    .content {
+      padding: 20px 30px;
       background-color: #7393C6;
-      padding: 1rem;
+      position: relative;
+      border-radius: 6px;
       color: white;
+    }
+
+    .content h3 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      .timeline::after {
+        left: 31px;
+      }
+
+      .timeline-container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+
+      .timeline-container::after {
+        left: 15px;
+      }
+
+      .left, .right {
+        left: 0;
+      }
     }
   </style>
 </head>
@@ -84,115 +152,56 @@
     <h2>Público objetivo</h2>
     <p>Jóvenes de Argentina de 18 a 21 años que hayan finalizado el colegio secundario y estén cursando estudios universitarios de grado o terciarios.</p>
 
-  <div id="timeline-embed" style="width: 100%; height: 600px"></div>
-<script type="text/javascript">
-  var additionalOptions = {
-    // Opciones adicionales si las necesitas
-  };
-  var timeline_json = {
-    "title": {
-      "text": {
-        "headline": "Cronograma del Programa",
-        "text": "Fechas clave del programa Activá lo Público"
-      }
-    },
-    "events": [
-      {
-        "start_date": {
-          "year": 2025,
-          "month": 5,
-          "day": 17
-        },
-        "text": {
-          "headline": "Lanzamiento del programa",
-          "text": "Apertura de inscripciones"
-        }
-      },
-      {
-        "start_date": {
-          "year": 2025,
-          "month": 6,
-          "day": 7
-        },
-        "text": {
-          "headline": "Cierre de postulaciones",
-          "text": ""
-        }
-      },
-      {
-        "start_date": {
-          "year": 2025,
-          "month": 6,
-          "day": 15
-        },
-        "end_date": {
-          "year": 2025,
-          "month": 7,
-          "day": 2
-        },
-        "text": {
-          "headline": "Evaluación de postulaciones",
-          "text": "Período de evaluación y entrevistas"
-        }
-      },
-      {
-        "start_date": {
-          "year": 2025,
-          "month": 7,
-          "day": 9
-        },
-        "text": {
-          "headline": "Anuncio de seleccionados",
-          "text": "Para la etapa virtual"
-        }
-      },
-      {
-        "start_date": {
-          "year": 2025,
-          "month": 8,
-          "day": 6
-        },
-        "text": {
-          "headline": "Inicio de la etapa virtual",
-          "text": ""
-        }
-      },
-      {
-        "start_date": {
-          "year": 2025,
-          "month": 9,
-          "day": 24
-        },
-        "text": {
-          "headline": "Fin de la etapa virtual",
-          "text": "Anuncio de seleccionados para la etapa presencial"
-        }
-      },
-      {
-        "start_date": {
-          "year": 2025,
-          "month": 10,
-          "day": 10
-        },
-        "end_date": {
-          "year": 2025,
-          "month": 10,
-          "day": 12
-        },
-        "text": {
-          "headline": "Actividad presencial",
-          "text": ""
-        }
-      }
-    ]
-  };
-  window.timeline = new TL.Timeline('timeline-embed', timeline_json, additionalOptions);
-</script>
+    <h2>Cronograma</h2>
+    <div class="timeline">
+      <div class="timeline-container left">
+        <div class="content">
+          <h3>17 de mayo</h3>
+          <p>Lanzamiento del programa y apertura de inscripciones</p>
+        </div>
+      </div>
+      <div class="timeline-container right">
+        <div class="content">
+          <h3>7 de junio</h3>
+          <p>Cierre de postulaciones</p>
+        </div>
+      </div>
+      <div class="timeline-container left">
+        <div class="content">
+          <h3>15 de junio al 2 de julio</h3>
+          <p>Evaluación de postulaciones y entrevistas</p>
+        </div>
+      </div>
+      <div class="timeline-container right">
+        <div class="content">
+          <h3>9 de julio</h3>
+          <p>Anuncio de seleccionados para la etapa virtual</p>
+        </div>
+      </div>
+      <div class="timeline-container left">
+        <div class="content">
+          <h3>6 de agosto</h3>
+          <p>Inicio de la etapa virtual</p>
+        </div>
+      </div>
+      <div class="timeline-container right">
+        <div class="content">
+          <h3>24 de septiembre</h3>
+          <p>Fin de la etapa virtual y anuncio de seleccionados/as para la etapa presencial</p>
+        </div>
+      </div>
+      <div class="timeline-container left">
+        <div class="content">
+          <h3>10, 11 y 12 de octubre</h3>
+          <p>Actividad presencial</p>
+        </div>
+      </div>
+    </div>
 
     <h2>Criterios de selección</h2>
     <ul>
       <li>Poseer nacionalidad argentina.</li>
-      <li>Haber nacido entre el 7 de agosto de 2003 y el 6 de agosto de 2007 inclusive, a la fecha de inicio del programa.</li>
+      <li>Haber nacido entre el 7 de agosto de 2003 y el 6 de agosto de 2007 inclusive.</li>
       <li>Haber finalizado el colegio secundario, ser estudiante universitario o terciario y no haber cursado aún más del 50% de la carrera.</li>
       <li>Contar con buen expediente académico y compromiso social.</li>
       <li>Vocación de servicio e interés por ser agente de cambio.</li>
@@ -202,7 +211,7 @@
     <p>Formación intensiva, mentorías, actividades prácticas, encuentros con referentes públicos.</p>
   </section>
 
-  <footer class="contacto">
+  <footer>
     <p>redactioargentina@gmail.com | @red.actio</p>
     <p>CUIL No. 00-000000000-0</p>
   </footer>
